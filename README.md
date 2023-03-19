@@ -1,5 +1,5 @@
 # CafeBar
-Un rapido y eficiente aprendizaje de las tecnicas basica de Java, me llevo a esta idea interesante, un programa para calcular la Utilidad neta de un CafeBar, teniendo en cuenta las Mesas, menu, personal y clientes.
+Un rapido y eficiente aprendizaje de las tecnicas basica de Java, me llevo a esta idea interesante, un programa para calcular la Utilidad neta de un CafeBar y medidanamente Gestionar sus datos de Mesas, menu, personal y clientes e Impuestos.
 
 Sencillamente use:
  Para la estructura de datos: Clases, Herencia, Objetos getter and Setter, constructores y toString para definir 6 Clases de datos.
@@ -181,5 +181,5 @@ Sencillamente use:
             fileIn.close();
         }
      ```
-
+Bueno, esto es solo en CafeBar, repitiendo con la classe Staff y Customer los puntos 1 al 3 tengo guardada una mini base de datos de un negocio de Cafe y Bar para analisar detenidamente y calcular el Utilidad Neta, Gastos por Cliente, Ganancia por hora de un camarero asi como un numero finito de informacion. Se imaginan usar Fireware y gestionar mejor el CafeBar? si yo si...
  
