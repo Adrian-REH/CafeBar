@@ -11,7 +11,9 @@ Sencillamente use:
  ## Uso:
   Supongamos que tenemos una CafeBar y precisamos guardar su informacion teniendo en cuenta los atributos como **_Ubicacion, nombre, impuestos, Menu[Precios: cafe, Sandwich, Beer, Water, Cake]_** entonces para guardar estos datos primero defino la clase
  
-  1  Modelo de datos: Ignorando los Setter y Getter y creando una funcion para que cuando el String del atributo sea mayor a 6 caracteres se elimine el resto, puedo definir de esta forma la Class:
+  -  Modelo de datos: Ignorando los Setter y Getter y creando una funcion para cuando el String del atributo sea mayor a 6 caracteres se elimine el resto y asi no tener error a la hora de pedir los datos usando RandomAccessFile. puedo definir de esta forma la Class:
+  
+  
   ```java
     public class CafeBar {
     String location;
@@ -53,11 +55,12 @@ Sencillamente use:
                 '}';
     }
 }
+  ```
     
-    ```
-  2  Guardado de datos: es necesario que en los atributos los String no sobrepasen de un cierto numero de caracteres para poder interpretar el pedido y poder moverme dentro del archivo.
+  -  Guardado de datos: es necesario que en los atributos los String no sobrepasen de un cierto numero de caracteres para poder interpretar el pedido y poder moverme dentro del archivo.
   Utilice List<CafeBar> para traer todos los CafeBar a guardar, y utilizar RandomAccessFile para guardar esos datos en CafeBar.txt usando "rws" para su lectura escritura, luego de eso uso write y el tipo de dato para guardar debidamente todo, siempre es necesario el uso de try catch throws para la gestion de errores al usar Files.
   CafeBarImp.java
+  
   ```java
       private static String  ARCHIVO_NAME= "CafeBar.txt";
     private static int  CAFEBAR_LENGTH= 52;
@@ -96,7 +99,7 @@ Sencillamente use:
   ```
 
  
-  3  Pedido de todos los datos: Luego de llenar el archivo y cerrarlo, puedo ingresar nuevamente y pedir esos datos
+  -  Pedido de todos los datos: Luego de llenar el archivo y cerrarlo, puedo ingresar nuevamente y pedir esos datos
   cuando sea necesario supongamos ahora mismo.
   
   Ahora siguiendo con el uso de try catch, trows y RandomAccessFile, usare read y el tipo de datos para leer linea a linea para recopilar la inforacion y enviarla al Main para resolver mis dudas empresariales. ahre
@@ -146,7 +149,7 @@ Sencillamente use:
     }
 
    ```
-   4  y Si deseo hacer un Back Up del resultado?: En este caso puedo usar el par PrintStream y FileInputStream,
+   -  y Si deseo hacer un Back Up del resultado?: En este caso puedo usar el par PrintStream y FileInputStream,
    para escribir y crear un archivo y el otro leerlo mira como queda:
  
    ```java
