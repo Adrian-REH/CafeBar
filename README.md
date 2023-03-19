@@ -8,7 +8,7 @@ Sencillamente use:
  para la Gestion de Errores: Try Catch finally, throws and Throw.
  y para trasladar los datos use ArrayList<>() y List<>
  
- ## Uso:
+ ## CODIGO:
   Supongamos que tenemos una CafeBar y precisamos guardar su informacion teniendo en cuenta los atributos como **_Ubicacion, nombre, impuestos, Menu[Precios: cafe, Sandwich, Beer, Water, Cake]_** entonces para guardar estos datos primero defino la clase
  
   -  Modelo de datos: Ignorando los Setter y Getter y creando una funcion para cuando el String del atributo sea mayor a 6 caracteres se elimine el resto y asi no tener error a la hora de pedir los datos usando RandomAccessFile. puedo definir de esta forma la Class:
